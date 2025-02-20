@@ -8,7 +8,7 @@ st.set_page_config(page_title="Diabetes Prediction", layout="wide", page_icon="ð
 st.title('Diabetes Prediction using ML')
 
 # Load trained model safely
-diabetes_model_path = r"/home/system/Desktop/project1/diabetes_model.sav"
+diabetes_model_path = r"diabetes_model.sav"
 
 try:
     with open(diabetes_model_path, 'rb') as model_file:
@@ -66,7 +66,7 @@ if st.button('Diabetes Test Result'):
 # Model Accuracy Button
 if st.button('Show Model Accuracy'):
     try:
-        test_data = pd.read_csv(r"/home/system/Desktop/project1/diabetes.csv")
+        test_data = pd.read_csv(r"diabetes.csv")
 
         # Ensure 'Outcome' column exists
         if "Outcome" not in test_data.columns:
