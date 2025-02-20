@@ -1,7 +1,7 @@
 import pickle
 import streamlit as st
 import pandas as pd
-from sklearn.metrics import accuracy_score
+
 
 # Set page title and layout
 st.set_page_config(page_title="Diabetes Prediction", layout="wide", page_icon="🧑‍⚕")
